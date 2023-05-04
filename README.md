@@ -1,6 +1,7 @@
 # Frontend Mentor - Easybank challenge
 
-<a to=/Images/Work_Progress_Board.png>This is a link to the working board of this website.</a>
+<img src="./Images/Work_Progress_Board.png" alt="Description of the image">
+
 
 The frontend part of this website is built using-->[Build a Reponsive Website from Scratch](https://www.youtube.com/playlist?list=PLUWqFDiirlsuYscECzks6zIZWr_Cfcx9k).
 
