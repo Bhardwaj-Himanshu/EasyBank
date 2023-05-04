@@ -1,9 +1,9 @@
 # Frontend Mentor - Easybank challenge
 
-<a href="https://www.youtube.com/playlist?list=PLUWqFDiirlsuYscECzks6zIZWr_Cfcx9k"><img src="https://i.imgur.com/tg5xw3w.jpg" alt="Image showing Coder Coder dressed in construction vest with hard hat and tools, title says Let's Build a Website with HTML and CSS, Part 1"></a>
+<a href="https://www.figma.com/file/wGTMLpVB1ZLrn2c7XqSx9N/EasyBank-Webiste!?type=whiteboard&node-id=0-1&t=8zsSFMQrLI9Safqh-0">This is a link to the working board of this website.</a>
 
-This is the source code from my YouTube video series, [Build a Reponsive Website from Scratch](https://www.youtube.com/playlist?list=PLUWqFDiirlsuYscECzks6zIZWr_Cfcx9k).
+The frontend part of this website is built using-->[Build a Reponsive Website from Scratch](https://www.youtube.com/playlist?list=PLUWqFDiirlsuYscECzks6zIZWr_Cfcx9k).
 
-Check out the final website [here](https://codercoder-easybank.pages.dev/)!
+Check out the final website [here](Will update the link soon)!
 
-If my videos helped you at all, consider [sponsoring me on GitHub](https://github.com/sponsors/thecodercoder) to support more free coding tutorials on my YouTube channel, Coder Coder!
+Thanks for having a look at this project!
