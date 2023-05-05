@@ -1,4 +1,3 @@
-@import "_header.css";
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -8,11 +7,16 @@ html {
   box-sizing: inherit;
 }
 
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   padding: 1;
   line-height: 1.3;
   font-family: "Public Sans", sans-serif;
+  font: hsl(233, 8%, 62%);
 }
 
 .flex {
@@ -29,4 +33,21 @@ body {
 }
 .flex-ai-b {
   align-items: baseline;
+}
+
+.header .nav {
+  padding: 24px;
+}
+.header__hamburger > span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: hsl(233, 26%, 24%);
+}
+.header__hamburger > span:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.bold {
+  font-weight: 100;
 }/*# sourceMappingURL=style.css.map */
