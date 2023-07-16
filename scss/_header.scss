@@ -17,12 +17,14 @@
             }
         }
     }
+    &__menu{
+        a{
+            font-size: $font-sm;
+        }
+    }
 }
 
 .bold{
     font-weight: 100;
 }
 
-&__menu{
-    color: $grayishBlue;
-}
