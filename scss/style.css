@@ -9,6 +9,7 @@ html {
 
 a, a:visited, a:hover {
   text-decoration: none;
+  color: hsl(233, 8%, 62%);
 }
 
 body {
@@ -34,6 +35,28 @@ body {
 }
 .flex-ai-b {
   align-items: baseline;
+}
+
+button, .button {
+  padding: 0.875rem 2.1875rem;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-image: linear-gradient(to right, #00FF00, hsl(192, 70%, 51%));
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
 }
 
 .header .nav {

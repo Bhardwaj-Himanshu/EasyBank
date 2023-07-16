@@ -9,6 +9,7 @@ html {
 
 a, a:visited, a:hover{
 text-decoration: none;
+color: $grayishBlue;
 }
 
 body{
@@ -36,3 +37,27 @@ body{
         align-items: baseline;
     }
 }
+
+//Buttons
+button,.button{
+    padding: 0.875rem 2.1875rem;
+    border-radius:50px;
+    cursor:pointer;
+    border:0;
+    background-image: linear-gradient(to right, $limegreen, $brightcyan);
+    color:white;
+    font-weight:bold;
+}
+
+// Visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+  }
+  
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
