@@ -1,6 +1,7 @@
 .header{
     .nav {
-        padding: 24px;
+        padding: 1.0625rem 1.5rem;
+        border: 1px solid blue;
     }
 
     &__hamburger {
@@ -18,8 +19,39 @@
         }
     }
     &__menu{
+        
         a{
             font-size: $font-sm;
+            transition: color 200ms ease; //this line of code isn't working!
+
+            &:not(:last-child){
+                margin-right:32px;
+            }
+        }
+        &::before {
+            content: "";
+            display: block;
+            position:relative; //relative here gives a complete line and absolute dosen't work!
+            height: 5px;
+            bottom:-49px;
+            left: 0;
+            right:0;
+            background: lime;
+            background: linear-gradient(to right, $limegreen, $brightcyan);
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
+        }
+        &:hover{
+            color: $darkblue;
+            &::before{
+                opacity:1;
+            }
+        }
+    }
+    &__logo{
+        img{
+            width:8.125rem;
+            height:1.375rem;
         }
     }
 }
