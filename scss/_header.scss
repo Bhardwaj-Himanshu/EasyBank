@@ -40,6 +40,17 @@
 
         }
     }
+    &__toggle{
+        background:$White;
+        padding: 1.625rem;
+        
+        a{
+            display:block;
+            text-align: center;
+            color:$darkblue;
+            padding:0.625rem;
+        }
+    }
 
     &__menu {
 
@@ -88,7 +99,7 @@
 }
 
 .overlay {
-    
+    display: none; //commenting out this line, adds the fade-out animation, but brings in the overlay flowing everytime someone reloads the page!
     position: fixed;
     top: 60px;
     bottom: 0px;
