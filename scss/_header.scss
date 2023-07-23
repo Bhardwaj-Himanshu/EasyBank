@@ -1,86 +1,100 @@
-.header{
+.header {
+    
+    &.open {
+        .overlay{
+            display: block;
+        }
+        .header__hamburger{
+        >span:first-child {
+            transform: rotate(45deg);
+        }
+    
+        >span:nth-child(2) {
+            opacity: 0;
+        }
+    
+        >span:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+    }
     .nav {
         padding: 1.0625rem 1.5rem;
         border: 1px solid blue;
     }
-
+    
     &__hamburger {
-        
-        > span {
+
+        >span {
             display: block;
             width: 25px;
             height: 5px;
-            background-color:$darkblue;
+            background-color: $darkblue;
             transition: all 300ms ease-in-out;
             transform-origin: -1px 1px;
-            
+
 
             &:not(:last-child) {
                 margin-bottom: 5px;
             }
-            
+
         }
-        &.open{
-            >span:first-child{
-              transform: rotate(45deg);
-            }
-            >span:nth-child(2){
-              opacity: 0;
-            }
-            >span:last-child{
-              transform: rotate(-45deg);
-            }
-        }
-        
     }
-    &__menu{
-        
-        a{
+
+    &__menu {
+
+        a {
             font-size: $font-sm;
             transition: color 200ms ease; //this line of code isn't working!
 
-            &:not(:last-child){
-                margin-right:32px;
+            &:not(:last-child) {
+                margin-right: 32px;
             }
         }
+
         &::before {
             content: "";
             display: block;
-            position:relative; //relative here gives a complete line and absolute dosen't work!
+            position: relative; //relative here gives a complete line and absolute dosen't work!
             height: 5px;
-            bottom:-49px;
+            bottom: -49px;
             left: 0;
-            right:0;
+            right: 0;
             background: lime;
             background: linear-gradient(to right, $limegreen, $brightcyan);
             opacity: 0;
             transition: opacity 300ms ease-in-out;
         }
-        &:hover{
+
+        &:hover {
             color: $darkblue;
-            &::before{
-                opacity:1;
+
+            &::before {
+                opacity: 1;
             }
         }
     }
-    &__logo{
-        img{
-            width:8.125rem;
-            height:1.375rem;
+
+    &__logo {
+        img {
+            width: 8.125rem;
+            height: 1.375rem;
         }
     }
 }
 
-.bold{
+.bold {
     font-weight: 100;
 }
 
-.overlay{
-    position:fixed;
+.overlay {
+    
+    position: fixed;
     top: 60px;
-    bottom:0px;
-    right:0px;
-    left:0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
     //background: $darkblue;
-    background-image: linear-gradient($darkblue,transparent);
+    background-image: linear-gradient($darkblue, transparent);
+    
 }
