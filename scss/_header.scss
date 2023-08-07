@@ -45,8 +45,8 @@
         padding: 1.625rem;
         
         a{
-            display:block;
-            text-align: center;
+            display:flex;
+            justify-content: center;//changed this from text-align=center to justify-content=center;
             color:$darkblue;
             padding:0.625rem;
         }
@@ -56,7 +56,7 @@
 
         a {
             font-size: $font-sm;
-            transition: color 200ms ease; //this line of code isn't working!
+            transition: color 200ms; //this line of code isn't working!
 
             &:not(:last-child) {
                 margin-right: 32px;
@@ -65,7 +65,7 @@
 
         &::before {
             content: "";
-            display: block;
+            display:block;
             position: relative; //relative here gives a complete line and absolute dosen't work!
             height: 5px;
             bottom: -49px;
@@ -99,7 +99,7 @@
 }
 
 .overlay {
-    display: none; //commenting out this line, adds the fade-out animation, but brings in the overlay flowing everytime someone reloads the page!
+    display: none; //FIXED AUTO:commenting out this line, adds the fade-out animation, but brings in the overlay flowing everytime someone reloads the page!
     position: fixed;
     top: 60px;
     bottom: 0px;

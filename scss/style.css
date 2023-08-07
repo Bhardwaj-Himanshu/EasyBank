@@ -91,14 +91,14 @@ button, .button {
   padding: 1.625rem;
 }
 .header__toggle a {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   color: hsl(233, 26%, 24%);
   padding: 0.625rem;
 }
 .header__menu a {
   font-size: 0.875rem;
-  transition: color 200ms ease;
+  transition: color 200ms;
 }
 .header__menu a:not(:last-child) {
   margin-right: 32px;
