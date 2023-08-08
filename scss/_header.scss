@@ -106,7 +106,7 @@
 }
 
 .overlay {
-    display: none; //FIXED AUTO:commenting out this line, adds the fade-out animation, but brings in the overlay flowing everytime someone reloads the page!
+    display: block; //Fade-out animation isn't working! Replacing this with display:block so that, the toggle does not animates as well!
     position: fixed;
     top: 0px;
     bottom: 0px;
