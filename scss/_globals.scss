@@ -19,6 +19,17 @@ body{
     font-size:$font-med;
     font-family: 'Public Sans', sans-serif;
     font: $grayishBlue;
+    
+    //Helper class to prevent user from scrolling when the toggle is open
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+
+//Helper class for padding all around
+.container{
+    padding: 0rem 1.5rem;
 }
 
 //flex box

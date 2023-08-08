@@ -18,9 +18,10 @@
         }
     }
     }
-    .nav {
-        padding: 1.0625rem 1.5rem;
-        border: 1px solid blue;
+    .nav{
+        position:relative;
+        background:#fff;
+        padding:1.0625rem 1.5rem;
     }
     
     &__hamburger {
@@ -43,10 +44,16 @@
     &__toggle{
         background:$White;
         padding: 1.625rem;
+        margin:1.5rem 1.5rem;
+        position: absolute;
+        width:calc(100% - 5rem);  //lines below here overflowing the toggle menu, understand these.
+        left:50%;                 //these have been adjusted to get a round-off value.
+        transform: translateX(-55%);
+        border-radius:5px;
         
         a{
             display:flex;
-            justify-content: center;//changed this from text-align=center to justify-content=center;
+            justify-content: center;
             color:$darkblue;
             padding:0.625rem;
         }
@@ -101,7 +108,7 @@
 .overlay {
     display: none; //FIXED AUTO:commenting out this line, adds the fade-out animation, but brings in the overlay flowing everytime someone reloads the page!
     position: fixed;
-    top: 60px;
+    top: 0px;
     bottom: 0px;
     right: 0px;
     left: 0px;
