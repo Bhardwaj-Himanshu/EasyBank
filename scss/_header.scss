@@ -60,35 +60,35 @@
     }
 
     &__menu {
-
-        a {
+        
+        a { 
+            position:relative;
             font-size: $font-sm;
-            transition: color 200ms; //this line of code isn't working!
+            transition: color 200ms;
 
             &:not(:last-child) {
                 margin-right: 32px;
             }
-        }
-
-        &::before {
-            content: "";
-            display:block;
-            position: relative; //relative here gives a complete line and absolute dosen't work!
-            height: 5px;
-            bottom: -49px;
-            left: 0;
-            right: 0;
-            background: lime;
-            background: linear-gradient(to right, $limegreen, $brightcyan);
-            opacity: 0;
-            transition: opacity 300ms ease-in-out;
-        }
-
-        &:hover {
-            color: $darkblue;
 
             &::before {
+                content:"";
+                display:block;
+                position:absolute;
+                height: 5px;
+                bottom: -30px;
+                left: 0;
+                right: 0;
+                background: black;
+                background: linear-gradient(to right, black, grey);
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+            &:hover::before {
                 opacity: 1;
+            }
+
+            &:hover{
+                color: $darkblue;
             }
         }
     }

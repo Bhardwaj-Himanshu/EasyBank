@@ -25,6 +25,10 @@ body{
         overflow: hidden;
     }
 }
+//Helper class to avoid the defualt styles for headings
+h1,h2,h3{
+    margin-top:0px;
+}
 
 
 //Helper class for padding all around
@@ -58,6 +62,11 @@ button,.button{
     background-image: linear-gradient(to right, $limegreen, $brightcyan);
     color:white;
     font-weight:bold;
+    transition:color 200ms;
+
+    &:hover{
+        color:black;
+    }
 }
 
 // Visibility
