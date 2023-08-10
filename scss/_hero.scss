@@ -22,13 +22,12 @@
 
     &__text{
         text-align:center;
-        &.h1{
-           right:50%; //Idk why these have no effect on the above!
+        
+        h1{
            margin-bottom:1.5rem;
         }
         p{
-            display: block;
-            margin-bottom: 2.5rem;
+          line-height:1.5;
         }
     }
 }

@@ -25,15 +25,10 @@ body{
         overflow: hidden;
     }
 }
-//Helper class to avoid the defualt styles for headings
-h1,h2,h3{
-    margin-top:0px;
-}
-
 
 //Helper class for padding all around
 .container{
-    padding: 0rem 1.5rem;
+    padding: 1.5rem 1.5rem;
 }
 
 //flex box
@@ -55,6 +50,8 @@ h1,h2,h3{
 
 //Buttons
 button,.button{
+    display: inline-block;
+    font-size: $font-sm;
     padding: 0.875rem 2.1875rem;
     border-radius:50px;
     cursor:pointer;
