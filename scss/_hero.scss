@@ -1,6 +1,10 @@
 //Styles for Hero
 .hero{
-    box-sizing: border-box;
+    //switching to flex-box when moving up to desktop
+    @include breakpoint-up(large){
+        display:flex;
+        align-items:center;
+    }
     
     &__image{
         position:relative;
@@ -9,14 +13,23 @@
         background-position: center center;
         min-height:17.5rem;
 
+        //Usage of mixins to shift the background image when switching to desktop
+        @include breakpoint-up(large){
+            flex:1;
+            order:2;
+            height:40rem;
+            background-image:url(/images/bg-intro-desktop.svg);;
+        }
+
         &::before{
             content:"";
             position:absolute;
             background-image:url(/images/image-mockups.png);
-            background-size:96%;
+            background-size:90%;
             background-position:bottom center;
             height:100%;
-            width:100%
+            width:100%;
+            top:20%;
         }
     }
 
