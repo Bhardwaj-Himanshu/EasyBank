@@ -85,7 +85,7 @@ body.no-scroll {
 }
 
 .container {
-  padding: 1.5rem 1.5rem;
+  padding: 3rem 3rem;
 }
 
 .flex {
@@ -262,4 +262,28 @@ button:hover, .button:hover {
 }
 .fade-out {
   animation: fade-out 200ms ease-in-out forwards;
+}
+
+.feature {
+  background-color: hsl(220, 16%, 96%);
+}
+@media (max-width: 63.9375em) {
+  .feature__updater {
+    display: block;
+  }
+}
+@media (min-width: 64em) {
+  .feature__updater {
+    display: flex;
+  }
+}
+.feature__grid {
+  margin: 1rem;
+}
+.feature__icon {
+  margin-bottom: 10px;
+}
+.feature__title {
+  font-weight: bold;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */

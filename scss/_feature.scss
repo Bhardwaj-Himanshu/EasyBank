@@ -1,0 +1,23 @@
+.feature{
+    background-color: $lightGrayishBlue;
+    &__updater{
+        
+        @include breakpoint-down(medium){
+            display:block;
+        }
+        @include breakpoint-up(large){
+            display:flex;
+        }
+    }
+    &__grid{
+        margin:1rem;
+        //border:1px solid red;
+    }
+    &__icon{
+        margin-bottom:10px;
+    }
+    &__title{
+        font-weight:bold;
+        margin-bottom:1rem;
+    }
+}
