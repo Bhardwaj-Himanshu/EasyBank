@@ -1,9 +1,11 @@
 //Styles for Hero
 .hero{
+    background-color: $veryLightGray;
     //switching to flex-box when moving up to desktop
     @include breakpoint-up(large){
         display:flex;
         align-items:center;
+        
     }
     
     &__image{
@@ -18,23 +20,39 @@
             flex:1;
             order:2;
             height:40rem;
-            background-image:url(/images/bg-intro-desktop.svg);;
+            //background-image:url(/images/bg-intro-desktop.svg);   
         }
 
         &::before{
+            @include breakpoint-up(large){
             content:"";
             position:absolute;
-            background-image:url(/images/image-mockups.png);
-            background-size:90%;
+            background-image:url(/images/bg-intro-desktop.svg);
+            background-size:96%;
             background-position:bottom center;
             height:100%;
             width:100%;
-            top:20%;
+            background-repeat: no-repeat;
+            }
+        }
+        &::after{
+            content:"";
+            position:absolute;
+            background-image:url(/images/image-mockups.png);
+            background-size:96%;
+            background-position:bottom center;
+            height: 120%;
+            width:90%;
+            left:10%;
         }
     }
 
     &__text{
         text-align:center;
+         
+        @include breakpoint-up(large){
+            text-align:left;
+        }
         
         h1{
            margin-bottom:1.5rem;
