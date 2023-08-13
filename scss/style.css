@@ -79,6 +79,7 @@ body {
   font-size: 1.125rem;
   font-family: "Public Sans", sans-serif;
   font: hsl(233, 8%, 62%);
+  overflow-x: hidden;
 }
 body.no-scroll {
   overflow: hidden;

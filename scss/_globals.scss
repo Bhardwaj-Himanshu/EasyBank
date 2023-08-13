@@ -19,6 +19,7 @@ body{
     font-size:$font-med;
     font-family: 'Public Sans', sans-serif;
     font: $grayishBlue;
+    overflow-x:hidden;
     
     //Helper class to prevent user from scrolling when the toggle is open
     &.no-scroll{
