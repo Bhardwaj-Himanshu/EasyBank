@@ -281,12 +281,13 @@ button:hover, .button:hover {
   margin: 2rem;
   width: 100%;
   height: 100%;
-  transition: box-shadow 200ms ease-in-out, border ease-in-out;
+  transition: box-shadow 150ms ease-in-out, border 150ms ease-in-out, transform 150ms ease-in-out;
   text-align: left;
   padding: 5px;
   border-radius: 5px;
 }
 .feature__grid:hover {
+  transform: scale(1.05);
   box-shadow: 12px 12px 2px 1px hsl(233, 26%, 24%);
   border: 3px solid hsl(233, 26%, 24%);
 }
@@ -303,4 +304,32 @@ button:hover, .button:hover {
 .feature__title {
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+.article__updater {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
+}
+@media (max-width: 63.9375em) {
+  .article__updater {
+    grid-template-columns: 1fr;
+  }
+}
+.article__content {
+  border-radius: 5px;
+  text-align: center;
+  transition: all 200ms ease-in-out;
+}
+.article__content:hover {
+  transform: scale(1.05);
+  box-shadow: 12px 12px 2px 1px hsl(233, 8%, 62%);
+  border: 3px solid hsl(233, 8%, 62%);
+}
+.article__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
