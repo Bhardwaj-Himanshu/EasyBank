@@ -1,6 +1,6 @@
 # EasyBank Static Landing Page
 
-![real_demo](https://github.com/Bhardwaj-Himanshu/EasyBank/assets/74407676/5ea7bca0-e54e-4cb9-af67-b68a08f6d428)
+https://github.com/Bhardwaj-Himanshu/EasyBank/assets/74407676/7c980107-11a6-4eec-8595-30b216f1eec9
 
 Check out the final website [here](https://bhardwaj-himanshu.github.io/EasyBank/)!
 
