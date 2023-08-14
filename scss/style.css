@@ -339,7 +339,6 @@ button:hover, .button:hover {
 }
 
 .footer {
-  position: absolute;
   background-color: hsl(233, 26%, 24%);
   text-align: center;
   bottom: 0;
