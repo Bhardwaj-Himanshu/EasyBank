@@ -1,10 +1,14 @@
-# Frontend Mentor - Easybank challenge
+# EasyBank Static Landing Page
 
-<img src="./images/Work_Progress_Board.png" alt="Description of the image">
+![real_demo](https://github.com/Bhardwaj-Himanshu/EasyBank/assets/74407676/5ea7bca0-e54e-4cb9-af67-b68a08f6d428)
 
+Check out the final website [here](https://bhardwaj-himanshu.github.io/EasyBank/)!
 
-The frontend part of this website is built using-->[Build a Reponsive Website from Scratch](https://www.youtube.com/playlist?list=PLUWqFDiirlsuYscECzks6zIZWr_Cfcx9k).
+## List of current standing issues
+1.Grid system does not work as intended on footer-I want col2 and col3 elements to occupy both the rows!
 
-Check out the final website [here](Will update the link soon)!
+https://github.com/Bhardwaj-Himanshu/EasyBank/assets/74407676/c430b5d6-961c-45e3-94df-0fc63045eae0
 
 Thanks for having a look at this project!
+
+This website was built using the following tutorial-->[Build a Reponsive Website from Scratch](https://www.youtube.com/playlist?list=PLUWqFDiirlsuYscECzks6zIZWr_Cfcx9k).
